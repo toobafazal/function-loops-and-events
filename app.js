@@ -88,6 +88,28 @@
 // 5. You have learned the function indexOf. Code your own custom
 // function that will perform the same functionality. You can code
 // for single character as of now.
+// function IndexOf(ar) {
+//     var arr = new Array(), arr = arr.concat(ar)
+//     arr.indexof = function (search, index) {
+//         var len = this.length
+//         if (len <= 0) return -1
+//         if (typeof index == 'undefined') index = 0;
+//         if (typeof index == 'number') {
+//             index = index >= 0 ? index : 0
+//         } 
+//         else {
+//             return 'err'
+//         }
+//         for (let i = index; i < len; i++) {
+//             if (this[i] === search) return i;
+//         }
+//         return -1
+//     }
+//     return arr
+// }
+
+// var x = new IndexOf([1, 2, 3, 4]);
+// console.log(x.indexof(2))
 
 
 
@@ -96,14 +118,98 @@
 // that the sentence is not more than 25 characters long.
 
 
+// function vowel(){
+//     var string = "The quick brown fox jumps over the lazy dog"
+//     var letter = string.replace(/[aeiou]/g, '_');
+//     document.write(letter)
+// }
+// vowel()
+
+
 // 7. Write a function with switch statement to count the number of
 // occurrences of any two vowels in succession in a line of text.
 // For example, in the sentence
+
+// function findOccurrences() {
+//     var str = "Pleases read this application and give me gratuity";
+//     var count = 0;
+//     let haveSeenVowel = false;
+  
+//     for (const letter of str.toLowerCase()) {
+//       switch (letter) {
+//         case 'a':
+
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//           {
+//             if (haveSeenVowel) {
+//               count++;
+//               haveSeenVowel = false;
+//             } else {
+//               haveSeenVowel = true;
+//             }
+//             break;
+//           }
+//         default:
+//           haveSeenVowel = false
+//       }
+//     }
+  
+//     return count
+//   }
+  
+//   console.log(findOccurrences());
+  
 
 
 // 8. The distance between two cities (in km.) is input through the
 // keyboard. Write four functions to convert and print this
 // distance in meters, feet, inches and centimeters.
+
+// var cityOne = +prompt("Enter first city distance in km");
+// var cityTwo = +prompt("Enter second city distance in km");
+ 
+// function meter(){
+//     var convertOne = cityOne * 1000;
+//     var convertTwo = cityTwo * 1000; 
+//     var convert = convertOne + convertTwo/2;
+//     document.write(convert);
+ 
+// }
+
+// meter();
+
+// function feet(){
+//     var convertOne = cityOne * 3280.8398950131;
+//     var convertTwo = cityTwo * 3280.8398950131;
+//          var convert = convertOne + convertTwo/2;
+//        document.write(convert);
+
+// }
+// feet();
+
+
+// function inch(){
+//     var convertOne = cityOne * 39370.0787 ;
+//     var convertTwo = cityTwo * 39370.0787 ;
+//          var convert = convertOne + convertTwo/2;
+//        document.write(convert);
+
+// }
+// inch();
+
+
+// function centimeter(){
+//     var convertOne = cityOne /100000;
+//     var convertTwo = cityTwo /100000;
+//          var convert = convertOne + convertTwo;
+//        document.write(convert);
+
+// }
+// centimeter();
+
 
 
 // 9. Write a program to calculate overtime pay of employees.
@@ -119,3 +225,37 @@
 // withdrawer. `
 
 
+// 1. Show an alert box on click on a link.
+// function popup(){
+//     alert("hello user")
+// }
+ 
+// describe in html 
+
+// 2. Display some Mobile images in browser. On click on an
+// image Show the message in alert to user.
+// function popup(){
+//         alert("some more pics")
+//     }
+
+
+// 3. Display 10 student records in table and each row should contain a delete
+// button. If you click on a button to delete a record, entire row should be
+// deleted. 
+// After click on delete button on “Mark ” row
+
+// for(var i = 0; i<25 ; i++){
+//     document.write(i + "<br>")
+// }
+// function myFunction() {
+//     var myobj = document.getElementById(i);
+//     myobj.remove(i);
+//   }
+
+// 4. Display an image in browser. Change the picture on mouseover and set the
+// first picture on mouseout.
+
+
+// 5. Show a counter in browser. Counter should increase on click on increase
+// button and decrease on click on decrease button. And show updated counter
+// value in browser.
