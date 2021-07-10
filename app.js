@@ -215,15 +215,40 @@
 // 9. Write a program to calculate overtime pay of employees.
 // Overtime is paid at the rate of Rs. 12.00 per hour for every hour
 // worked above 40 hours. Assume that employees do not work
-// for fractional part of an hour.
+// // for fractional part of an hour.
+// var hour = +prompt("enter no. of hours");
+// var oneHour = 12;
+// var pay;
+// function over(){
+//     if(hour>40){
+//         pay =(hour - 40)*oneHour
+//     }
+//     else{
+//         document.write("no over time today")
+//     }
+//     return pay;
+// }
+// document.write(over());
+
 
 
 // 10. A cashier has currency notes of denominations 10, 50 and
 // 100. If the amount to be withdrawn is input through the
 // keyboard in hundreds, find the total number of currency notes
 // of each denomination the cashier will have to give to the
-// withdrawer. `
+// withdrawer. 
 
+// var input = +prompt("enter amount in hundred");
+// function total(amount){
+//     var hundred = (amount - (amount % 100))/100;
+//     amount -= hundred *100;
+//     var fifty = (amount - (amount % 50))/50;
+//     amount -= fifty *50;
+//     var tens = (amount - (amount % 10))/10;
+//     return [hundred,fifty,tens]
+    
+// }
+// alert(total(input))
 
 // 1. Show an alert box on click on a link.
 // function popup(){
@@ -243,19 +268,30 @@
 // button. If you click on a button to delete a record, entire row should be
 // deleted. 
 // After click on delete button on “Mark ” row
-
-// for(var i = 0; i<25 ; i++){
-//     document.write(i + "<br>")
+ 
+// function dlt(){
+//     var element =document.getElementById("dlt");
+//     element.style.display='none';
 // }
-// function myFunction() {
-//     var myobj = document.getElementById(i);
-//     myobj.remove(i);
-//   }
 
 // 4. Display an image in browser. Change the picture on mouseover and set the
 // first picture on mouseout.
-
+//  describe in html 
 
 // 5. Show a counter in browser. Counter should increase on click on increase
 // button and decrease on click on decrease button. And show updated counter
 // value in browser.
+
+// let btnAdd =document.querySelector('#add');
+// let btnsubtract =document.querySelector('#subtract');
+// let input =document.querySelector('input');
+
+
+// btnAdd.addEventListener('click', ()=> {
+//     input.value = parseInt(input.value) + 1;
+// });
+
+
+// btnsubtract.addEventListener('click', () =>{
+//     input.value = parseInt(input.value) - 1;
+// });
